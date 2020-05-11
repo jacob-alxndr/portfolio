@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: $black;
+    outline: none;
+}
+
+::selection {
+    background-color: $black;
+    color: $white;
+}
