@@ -49,8 +49,14 @@ module.exports = {
 
     // Additional HTML pages
     // new HtmlWebpackPlugin({
-    //   filename: 'about.html',
-    //   template: './src/about.html',
+    //   filename: 'projects.html',
+    //   template: './src/projects.html',
+    // }),
+
+    // Additional HTML pages
+    // new HtmlWebpackPlugin({
+    //   filename: 'projects.html',
+    //   template: './src/project#.html',
     // }),
   ],
 };
