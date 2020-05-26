@@ -1,6 +1,24 @@
 .navigation {
+    margin-top: var(--spacing-small);
+    &__list {
+        list-style: none;
+    }
+    &__item {
+        &:hover > .navigation__link::after {
+            transform: scaleX(100%);
+        }
+    }
     &__link {
-        color: $color-primary;
         text-decoration: none;
+        position: relative;
+        &::after {
+            @include pseudo;
+            background-color: var(--blue);
+            height: 0.1rem;
+            width: 100%;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: left;
+        }
     }
 }

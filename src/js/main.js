@@ -2,4 +2,4 @@
 
 import test from './modules/test';
 
-import '../scss/main.scss';
+   import '../scss/main.scss';

@@ -1,22 +1,5 @@
-.grid {
-    height: 100vh;
+body {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    background-color: $white;
-    justify-content: center;
-    align-content: center;
+    grid-gap: var(--spacing-xs);
+    grid-template-columns: [page-start] 1fr [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end] 1fr [page-end];
 }
-
-.item {
-    grid-column: 1/-1;
-}
-
-// .flex-row {
-//     display: flex;
-//     justify-content: space-between;
-//     align-content: baseline;
-
-//     &__item {
-//         flex: 1;
-//     }
-// }

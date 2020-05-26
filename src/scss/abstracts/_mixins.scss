@@ -1,42 +1,53 @@
 //DEVELOPMENT
-@mixin test() { 
-    border:1px dotted red;
+@mixin test() {
+    border: 1px dotted red;
 }
-
 
 //MEDIA QUERIES
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) {@content};      //600px
+        @media only screen and (max-width: 37.5em) {
+            @content;
+        } //600px
     }
 
     @if $breakpoint == tab-port2 {
-        @media only screen and (max-width: 42em) {@content};        //672px
+        @media only screen and (max-width: 42em) {
+            @content;
+        } //672px
     }
 
     @if $breakpoint == tab-port1 {
-        @media only screen and (max-width: 60em) {@content};        //960px
+        @media only screen and (max-width: 60em) {
+            @content;
+        } //960px
     }
 
     @if $breakpoint == tab-land2 {
-        @media only screen and (max-width: 68.75em) {@content};     //1100px
+        @media only screen and (max-width: 68.75em) {
+            @content;
+        } //1100px
     }
 
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) {@content};        //1200px
+    @if $breakpoint == tab-land1 {
+        @media only screen and (max-width: 75em) {
+            @content;
+        } //1200px
     }
 
     @if $breakpoint == desktop {
-        @media only screen and (min-width: 112.5em) {@content};     //1800px 
+        @media only screen and (min-width: 112.5em) {
+            @content;
+        } //1800px
     }
 }
 
 // POSITIONING
 @mixin center() {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @mixin margin-auto() {
@@ -61,15 +72,13 @@
     align-items: center;
 }
 
-
 //MIXINS
 @mixin boxShadow() {
-    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-@mixin pseudo(){
-    content: '';
+@mixin pseudo() {
+    content: "";
     display: block;
-    position: absolue;
+    position: absolute;
 }
-
