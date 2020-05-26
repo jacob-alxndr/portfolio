@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const config = require('./webpack.config');
 
 module.exports = merge(config, {
-  mode: 'none', // 'production' || 'development' || 'none'
+  mode: 'production', // 'production' || 'development' || 'none'
   module: {
     rules: [
       {
