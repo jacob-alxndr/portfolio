@@ -48,10 +48,10 @@ module.exports = {
     }),
 
     // Additional HTML pages
-    // new HtmlWebpackPlugin({
-    //   filename: 'projects.html',
-    //   template: './src/projects.html',
-    // }),
+    new HtmlWebpackPlugin({
+      filename: '404.html',
+      template: './src/404.html',
+    }),
 
     // Additional HTML pages
     // new HtmlWebpackPlugin({
