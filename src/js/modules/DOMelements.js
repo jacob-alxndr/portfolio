@@ -1,4 +1,4 @@
 export const elements = {
-  htmlTag: document.querySelector('html'),
-  aTags: document.querySelectorAll('a'),
+  bodyTag: document.querySelector('body'),
+  darkModeBtn: document.querySelector('button'),
 };

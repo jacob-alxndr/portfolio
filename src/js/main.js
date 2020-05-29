@@ -1,5 +1,5 @@
 // 1.Importing our own JS files
 
-import test from './modules/test';
+import darkMode from './modules/darkMode';
 
    import '../scss/main.scss';

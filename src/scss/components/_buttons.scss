@@ -3,7 +3,7 @@
 //     padding: 1rem 1.5rem;
 //     background-color: $white;
 //     cursor: pointer;
-  
+
 //     &--main{
 //       border-radius: 5rem;
 //       position: relative;
@@ -16,10 +16,21 @@
 //       letter-spacing: 2px;
 //       animation: fadeIn 1.8s ease-in-out;
 //       transition: all .5s;
-      
+
 //       &:hover{
-    
+
 //       }
 //     }
-   
+
 //   }
+
+.darkModeBtn {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    padding: var(--spacing-xxs) var(--spacing-xs);
+}
