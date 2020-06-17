@@ -14,6 +14,6 @@ words.forEach((word) => {
 gsap.to(".letter", {
   duration: 1,
   y: 4,
-  stagger: { amount: -0.3, repeat: -1, yoyo: true },
+  stagger: { amount: -0.5, repeat: -1, yoyo: true },
   ease: "power1.inOut",
 });
