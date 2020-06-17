@@ -1,24 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
 body {
-    min-height: 100vh;
-    padding: var(--spacing-small);
-    background-color: var(--white);
+  min-height: 100vh;
+  padding: var(--spacing-small);
+  background-color: var(--white);
 }
 
 ::selection {
-    background-color: var(--blue);
-    color: var(--white);
+  background-color: var(--blue);
+  color: var(--white);
 }

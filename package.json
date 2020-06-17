@@ -33,7 +33,8 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "clean-webpack-plugin": "^3.0.0"
+    "clean-webpack-plugin": "^3.0.0",
+    "gsap": "^3.3.3"
   },
   "repository": {
     "type": "git",
