@@ -14,10 +14,12 @@ html {
 
 body {
   min-height: 100vh;
-  padding: var(--spacing-small);
+
   background-color: var(--white);
 }
-
+main {
+  padding: var(--spacing-small);
+}
 ::selection {
   background-color: var(--blue);
   color: var(--white);
