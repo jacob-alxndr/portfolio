@@ -23,6 +23,7 @@ const tl = gsap.timeline({
   },
 });
 // 2. Actions
+
 newTl.from(background, {
   scaleX: 0,
   duration: 1.05,
@@ -33,4 +34,5 @@ tl.from(cards, {
   opacity: 0,
   y: 32,
   duration: 0.3,
+  clearProps: "all",
 });
