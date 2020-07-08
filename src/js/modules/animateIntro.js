@@ -5,8 +5,11 @@ import { gsap } from "gsap";
 const { intro, introText, cards, background } = elements;
 const tl = gsap.timeline();
 
-tl.from(introText, { opacity: 0, duration: 0 })
-  .from(introText, { y: "-100vh", ease: "Power4.easeInOut", duration: 1.5 })
+tl.to(introText, {
+  y: "0vh",
+  ease: "Power4.easeInOut",
+  duration: 1.5,
+})
   .to(
     introText,
     { y: "100vh", ease: "Power4.easeInOut", duration: 1.0 },
