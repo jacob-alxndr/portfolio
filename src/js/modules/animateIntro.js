@@ -4,7 +4,9 @@ import { gsap } from "gsap";
 // 1. Selectors
 const { intro, introText, cards, background } = elements;
 const tl = gsap.timeline();
-tl.from(introText, { y: "-100vh", ease: "Power4.easeInOut", duration: 1.5 })
+
+tl.from(introText, { opacity: 0, duration: 0 })
+  .from(introText, { y: "-100vh", ease: "Power4.easeInOut", duration: 1.5 })
   .to(
     introText,
     { y: "100vh", ease: "Power4.easeInOut", duration: 1.0 },
