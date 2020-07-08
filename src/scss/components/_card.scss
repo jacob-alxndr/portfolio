@@ -1,6 +1,5 @@
 .card__container {
   border: 2px solid transparent;
-  // max-width: 40rem;
   max-height: 50rem;
   display: flex;
   flex-direction: column;
@@ -71,13 +70,6 @@
   &:active {
     background-color: var(--grey-light);
     border: 2px solid var(--grey-light);
-    .card__media {
-      // background-color: orangered;
-    }
-    // .card__title,
-    // .card__icon {
-    //   color: var(--grey-dark);
-    // }
   }
 
   &__media {
@@ -86,10 +78,8 @@
     background-position-x: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    // border-radius: 1rem 1rem 0 0;
     height: 64%;
     width: 100%;
-    // background-color: var(--white);
     transition: all 0.3s ease;
     filter: grayscale(30%);
 
@@ -169,13 +159,11 @@
     position: absolute;
     bottom: 1.4rem;
     left: 2rem;
-    // transform: translate(-50%, -50%);
-    // width: 90%;
     padding: 0.5rem 1rem;
     background-color: transparent;
-    border: 1px solid var(--white);
+    border: 1px solid transparent;
     border-radius: 0.5rem;
-    color: transparent;
+    color: var(--grey);
     text-transform: uppercase;
     outline: none;
     transition: all 0.3s ease;

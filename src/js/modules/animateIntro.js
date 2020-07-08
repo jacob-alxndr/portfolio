@@ -16,9 +16,9 @@ tl.from(introText, { y: "-100vh", ease: "Power4.easeInOut", duration: 1.5 })
     transformOrigin: "top",
     ease: "Power4.easeInOut",
     duration: 0.5,
-  })
-  .from(cards, {
-    opacity: 0,
-    y: 24,
-    duration: 2,
   });
+// .from(cards, {
+//   opacity: 0,
+//   y: 24,
+//   duration: 2,
+// });
