@@ -1,2 +1,13 @@
 .header {
+  min-height: 28vw;
+  padding-top: var(--spacing-huge);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  p {
+    font-size: var(--h4);
+    font-weight: 300;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
 }

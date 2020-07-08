@@ -1,13 +1,11 @@
 main {
-    grid-column: col-start 3 / col-end 10;
-    justify-self: center;
-    align-self: center;
-    @include respond(desktop) {
-        grid-column: col-start 4 / col-end 8;
-    }
-    @include respond(phone) {
-        justify-self: auto;
-        align-self: auto;
-        grid-column: page-start 1 / page-end;
-    }
+  & > * {
+    margin-bottom: var(--spacing-huge);
+  }
+  @include respond(desktop) {
+    grid-column: col-start 4 / col-end 8;
+  }
+  @include respond(phone) {
+    // padding: 2rem;
+  }
 }

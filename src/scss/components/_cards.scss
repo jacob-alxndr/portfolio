@@ -1,0 +1,9 @@
+.cards {
+  display: grid;
+  grid-gap: var(--spacing-medium);
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,5 +1,7 @@
-body {
-    display: grid;
-    grid-gap: var(--spacing-xs);
-    grid-template-columns: [page-start] 1fr [content-start] repeat(12, [col-start] 1fr [col-end]) [content-end] 1fr [page-end];
-}
+// body {
+//   display: grid;
+//   grid-gap: var(--spacing-sm);
+//   grid-template-columns:
+//     [page-start] 1fr [content-start] repeat(12, [col-start] 1fr [col-end])
+//     [content-end] 1fr [page-end];
+// }

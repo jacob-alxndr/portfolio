@@ -1,29 +1,33 @@
 :root {
-    // COLORS
-    --white: #fafafa;
-    --grey: #353535;
-    --black: #1a1a1a;
-    --red: #c73737;
-    --green: #61e846;
-    --blue: #4c23f1; // 4848ff ALT
+  // COLORS
+  --white: #fafafa;
+  --grey-light: #f3f3f3;
+  --grey-mid: #9c9c9c;
+  --grey: #7c7c7c;
+  --grey-dark: #353535;
+  --black: #1a1a1a;
+  --red: #c73737;
+  --green: #61e846;
+  --blue: #4c23f1; // 4848ff ALT
 
-    // SHADOWS
-    --text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
-    --box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
-    //SPACING
-    --spacing-xxxs: 0.2rem;
-    --spacing-xxs: 0.4rem;
-    --spacing-xs: 0.8rem;
-    --spacing-small: 1.6rem;
-    --spacing-medium: 2.4rem;
-    --spacing-large: 3.2rem;
-    --spacing-huge: 6.4rem;
-    //FONTS
-    --h1: 4.8rem;
-    --h2: 4rem;
-    --h3: 3.2rem;
-    --h4: 2.4rem;
-    --h5: 1.8rem;
-    --h6: 1.6rem;
-    --p-small: 1.4rem;
+  // SHADOWS
+  --text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  --box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  //SPACING
+  --spacing-xxxs: 0.2rem;
+  --spacing-xxs: 0.4rem;
+  --spacing-xs: 0.8rem;
+  --spacing-small: 1.6rem;
+  --spacing-medium: 2.4rem;
+  --spacing-xl: 6.4rem;
+  --spacing-huge: 9.6rem;
+  //FONTS
+  --h1: 4.8rem;
+  --h2: 4rem;
+  --h3: 4.2rem;
+  --h4: 2.4rem;
+  --h5: 1.8rem;
+  --h6: 1.6rem;
+  --p-small: 1.4rem;
+  --badge-text: 1rem;
 }

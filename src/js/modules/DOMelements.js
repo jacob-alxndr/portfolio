@@ -4,4 +4,5 @@ export const elements = {
   words: document.querySelectorAll(".word"),
   intro: document.querySelector(".intro"),
   introText: document.querySelector(".intro__title"),
+  cards: document.querySelectorAll(".card"),
 };

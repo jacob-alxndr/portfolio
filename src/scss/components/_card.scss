@@ -1,0 +1,203 @@
+.card__container {
+  border: 2px solid transparent;
+  // max-width: 40rem;
+  max-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--white);
+  transition: all 0.3s ease;
+
+  @include respond(tab-port) {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-3px) scale(1.001);
+  }
+}
+
+.card {
+  text-decoration: none;
+  background-color: var(--white);
+  //   max-width: 25rem;
+  cursor: default;
+  width: 100%;
+  height: 24rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 1rem 1rem 0 0;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  outline: none;
+  transition: border 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 0rem;
+  overflow: hidden;
+
+  &:hover {
+    background-color: var(--white);
+    border: 2px solid var(--grey-light);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.03);
+
+    .card__media {
+      transform: scale(1.02);
+    }
+
+    .card__title {
+      color: var(--grey-dark);
+    }
+    .card__icon {
+      color: var(--grey-mid);
+    }
+
+    & + .card__cart-btn {
+      background-color: var(--white);
+      // border: 1px solid var(--blue);
+      color: var(--blue);
+    }
+  }
+
+  &:focus {
+    border: 2px solid var(--blue);
+
+    .card__title {
+      color: var(--black);
+    }
+  }
+
+  &:active {
+    background-color: var(--grey-light);
+    border: 2px solid var(--grey-light);
+    .card__media {
+      // background-color: orangered;
+    }
+    // .card__title,
+    // .card__icon {
+    //   color: var(--grey-dark);
+    // }
+  }
+
+  &__media {
+    position: relative;
+    background-position-y: 0;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // border-radius: 1rem 1rem 0 0;
+    height: 64%;
+    width: 100%;
+    // background-color: var(--white);
+    transition: all 0.3s ease;
+    filter: grayscale(30%);
+
+    // &::before {
+    //   background-color: rgb(255, 245, 245);
+    //   content: "";
+    //   // display: block;
+    //   width: 100%;
+    //   height: 100%;
+    //   mix-blend-mode: multiply;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    // }
+
+    // &::after {
+    //   background-color: rgb(74, 1, 190);
+    //   content: "";
+    //   // display: block;
+    //   width: 100%;
+    //   height: 100%;
+
+    //   mix-blend-mode: multiply;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    // }
+    &--1 {
+      background-image: url("../assets/imgs/jacob_martinez.png");
+    }
+    &--2 {
+      background-image: url("../assets/imgs/handling_quarantine.png");
+      background-position-y: 30%;
+    }
+    &--3 {
+      background-image: url("../assets/imgs/tasks.png");
+      background-position-y: 50%;
+    }
+    &--4 {
+      background-image: url("../assets/imgs/cineola.png");
+      background-position-y: 50%;
+    }
+    &--5 {
+      background-image: url("../assets/imgs/Andrea_Gutierrez.jpg");
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    // z-index: 1;
+    bottom: 1rem;
+    right: 2rem;
+    font-size: var(--badge-text);
+    padding: 1rem;
+    color: var(--grey-mid);
+  }
+
+  &__title {
+    font-size: var(--p-small);
+    padding: 2rem;
+
+    color: var(--grey-dark);
+    @include respond(tab-land) {
+      font-size: 1.2rem;
+    }
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+  }
+
+  &__cart-btn {
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 1.4rem;
+    left: 2rem;
+    // transform: translate(-50%, -50%);
+    // width: 90%;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 0.5rem;
+    color: transparent;
+    text-transform: uppercase;
+    outline: none;
+    transition: all 0.3s ease;
+
+    @include respond(phone) {
+      font-size: 0.6rem;
+    }
+
+    &:focus {
+      border: 1px solid var(--blue);
+      color: var(--blue);
+    }
+
+    &:hover {
+      background-color: var(--blue);
+      border: 1px solid var(--blue);
+      color: var(--white);
+    }
+
+    &:active {
+      border: 1px solid var(--blue);
+      background-color: var(--blue);
+    }
+  }
+}
