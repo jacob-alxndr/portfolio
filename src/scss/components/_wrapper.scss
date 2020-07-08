@@ -1,8 +1,5 @@
 .wrapper {
   max-width: 80rem;
   margin: 0 auto;
-
-  @include respond(phone) {
-    padding: 0 2rem;
-  }
+  padding: 0 2rem;
 }

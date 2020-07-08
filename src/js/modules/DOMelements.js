@@ -5,4 +5,5 @@ export const elements = {
   intro: document.querySelector(".intro"),
   introText: document.querySelector(".intro__title"),
   cards: document.querySelectorAll(".card"),
+  background: document.querySelector(".animate-bg"),
 };

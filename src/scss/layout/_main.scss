@@ -1,11 +1,11 @@
 main {
   & > * {
-    margin-bottom: var(--spacing-huge);
+    padding: var(--spacing-huge) 0;
+    @include respond(phone) {
+      padding: var(--spacing-medium) 0;
+    }
   }
   @include respond(desktop) {
     grid-column: col-start 4 / col-end 8;
-  }
-  @include respond(phone) {
-    // padding: 2rem;
   }
 }
