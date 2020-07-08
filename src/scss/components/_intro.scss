@@ -11,8 +11,11 @@
   overflow-y: hidden;
   transform-origin: bottom;
   //   transform: scaleY(0);
-  h1 {
-    font-size: 25rem;
-    font-weight: 400;
+  &__title {
+    opacity: 0;
+    h1 {
+      font-size: 25rem;
+      font-weight: 400;
+    }
   }
 }
