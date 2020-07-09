@@ -29,6 +29,12 @@
     text-decoration: underline;
     position: relative;
     padding-bottom: var(--spacing-xxxs);
+    padding: 0.2rem;
+    border: 1px solid transparent;
+    &:focus {
+      outline: none;
+      border: 1px solid var(--blue);
+    }
 
     // &:hover::after,
     // &:hover:after {
