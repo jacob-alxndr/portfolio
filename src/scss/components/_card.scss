@@ -69,7 +69,7 @@
 
   &:active {
     background-color: var(--grey-light);
-    border: 2px solid var(--grey-light);
+    border: 2px solid var(--grey-mid);
   }
 
   &__media {
@@ -168,9 +168,9 @@
     outline: none;
     transition: all 0.3s ease;
 
-    @include respond(phone) {
-      font-size: 0.6rem;
-    }
+    // @include respond(phone) {
+    //   font-size: 0.6rem;
+    // }
 
     &:focus {
       border: 1px solid var(--blue);

@@ -7,6 +7,6 @@ const { cards } = elements;
 //2. Actions
 cards.forEach((card) =>
   card.addEventListener("mouseup", function() {
-    card.blur();
+    card.firstElementChild.blur();
   })
 );
