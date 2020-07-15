@@ -5,20 +5,14 @@
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    @include respond(tab-port1) {
-      flex-direction: column;
-      align-items: flex-end;
+    @include respond(phone) {
+      // flex-direction: column;
+      justify-content: space-between;
     }
   }
   &__item {
     &:not(:last-child) {
       margin-right: var(--spacing-medium);
-    }
-    @include respond(tab-port1) {
-      width: 6rem;
-      &:not(:last-child) {
-        margin-right: 0;
-      }
     }
   }
   &__link {

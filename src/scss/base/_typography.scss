@@ -21,7 +21,7 @@ h1 {
   font-size: var(--h1);
   font-weight: 400;
   @include respond(phone) {
-    font-size: calc(var(--h1) - 4vw);
+    font-size: calc(var(--h1) - 8vw);
   }
 }
 
@@ -29,6 +29,9 @@ h2 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: var(--h2);
   font-weight: 400;
+  @include respond(phone) {
+    font-size: calc(var(--h2) - 2vw);
+  }
 }
 
 h3 {
@@ -64,7 +67,7 @@ h6 {
 p {
   font-size: var(--h6);
   @include respond(phone) {
-    font-size: var(--p-small);
+    font-size: 1rem;
     color: var(--grey);
   }
 }
@@ -81,7 +84,7 @@ a {
     color: var(--blue);
   }
   @include respond(phone) {
-    font-size: var(--p-small);
+    // font-size: var(--p-small);
   }
 }
 

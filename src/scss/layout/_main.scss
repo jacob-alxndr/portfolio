@@ -2,7 +2,7 @@ main {
   & > * {
     padding: var(--spacing-huge) 0;
     @include respond(phone) {
-      padding: var(--spacing-medium) 0;
+      padding: var(--spacing-large) 0;
     }
   }
   @include respond(desktop) {

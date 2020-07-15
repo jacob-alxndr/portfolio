@@ -17,7 +17,7 @@
     font-weight: 300;
     font-family: "IBM Plex Sans", sans-serif;
     @include respond(phone) {
-      font-size: var(--p-small);
+      font-size: var(--h5);
     }
   }
 }
