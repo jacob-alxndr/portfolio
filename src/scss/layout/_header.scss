@@ -4,6 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include respond(phone) {
+    padding: var(--spacing-small) 0 var(--spacing-large) 0;
+  }
   .heading {
     &__title {
       margin-bottom: 0;
@@ -17,7 +20,7 @@
     font-weight: 300;
     font-family: "IBM Plex Sans", sans-serif;
     @include respond(phone) {
-      font-size: var(--h5);
+      font-size: 1.7rem;
     }
   }
 }
