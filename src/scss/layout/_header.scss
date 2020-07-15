@@ -1,13 +1,19 @@
 .header {
-  min-height: 28vw;
+  // padding: 12rem 0;
+  min-height: 40vw;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  .heading {
+    &__title {
+      margin-bottom: 0;
+    }
+  }
   @include respond(phone) {
     min-height: 0;
   }
   p {
-    font-size: var(--h4);
+    font-size: var(--h3);
     font-weight: 300;
     font-family: "IBM Plex Sans", sans-serif;
     @include respond(phone) {

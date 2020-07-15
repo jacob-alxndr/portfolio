@@ -1,32 +1,30 @@
 .navigation {
-  // padding: var(--spacing-xl) 0;
-
   position: relative;
-  .animate-bg {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--grey-light);
-    // background-color: orangered;
-    transform-origin: left;
-  }
+  padding: 4rem 0 0rem 0;
   &__list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     @include respond(tab-port1) {
       flex-direction: column;
+      align-items: flex-end;
     }
   }
   &__item {
-    &:not(last-child) {
-      margin-bottom: var(--spacing-xxs);
+    &:not(:last-child) {
+      margin-right: var(--spacing-medium);
+    }
+    @include respond(tab-port1) {
+      width: 6rem;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
     }
   }
   &__link {
-    text-decoration: underline;
+    font-family: "IBM Plex Sans", sans-serif;
+
+    text-decoration: none;
     position: relative;
     padding-bottom: var(--spacing-xxxs);
     padding: 0.2rem;

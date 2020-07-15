@@ -26,11 +26,11 @@
   //   max-width: 25rem;
   cursor: default;
   width: 100%;
-  height: 24rem;
+  height: 40rem;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.07);
   // border-radius: 1rem 1rem 0 0;
   border: 2px solid transparent;
-  border-radius: 0.5rem;
+  // border-radius: 0.5rem;
   outline: none;
   transition: border 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   padding-bottom: 0rem;
@@ -52,7 +52,7 @@
       color: var(--grey-mid);
     }
 
-    & + .card__cart-btn {
+    & + .card__site-btns .card__site-btn {
       background-color: var(--white);
       border: 1px solid var(--blue);
       color: var(--blue);
@@ -74,13 +74,14 @@
 
   &__media {
     position: relative;
-    background-position-y: 0;
+    background-position-y: 30%;
     background-position-x: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 64%;
     width: 100%;
     transition: all 0.3s ease;
+
     filter: grayscale(30%);
 
     // &::before {
@@ -108,29 +109,29 @@
     //   left: 0;
     // }
     &--1 {
-      background-image: url("../assets/imgs/jacob_martinez-4.jpg");
+      background-image: url("../assets/imgs/jacob-photo.jpg");
     }
     &--2 {
-      background-image: url("../assets/imgs/handling_quarantine-4.jpg");
-      background-position-y: 30%;
+      background-image: url("../assets/imgs/quarantine.jpg");
     }
     &--3 {
-      background-image: url("../assets/imgs/tasks-4.jpg");
-      background-position-y: 50%;
+      background-image: url("../assets/imgs/tasks.jpg");
     }
     &--4 {
-      background-image: url("../assets/imgs/cineola-4.jpg");
-      background-position-y: 50%;
+      background-image: url("../assets/imgs/cineola.jpg");
     }
     &--5 {
-      background-image: url("../assets/imgs/Andrea_Gutierrez-5.jpg");
+      background-image: url("../assets/imgs/andrea-photo.jpg");
+    }
+    &--6 {
+      background-image: url("../assets/imgs/pokedex.jpg");
     }
   }
 
   &__icon {
     position: absolute;
     // z-index: 1;
-    bottom: 1rem;
+    bottom: 2.4rem;
     right: 2rem;
     font-size: var(--badge-text);
     padding: 1rem;
@@ -138,7 +139,6 @@
   }
 
   &__title {
-    font-size: var(--p-small);
     padding: 2rem;
 
     color: var(--grey-dark);
@@ -150,42 +150,61 @@
     }
   }
 
-  &__cart-btn {
-    text-decoration: none;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
+  &__site-btns {
+    // text-decoration: none;
+    // white-space: nowrap;
+    // cursor: pointer;
+    // font-size: 1rem;
+    // font-weight: 500;
     position: absolute;
-    bottom: 1.4rem;
+    bottom: 3.2rem;
     left: 2rem;
-    padding: 0.5rem 1rem;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0.3rem;
-    color: var(--grey);
-    text-transform: uppercase;
-    outline: none;
-    transition: all 0.3s ease;
+    // padding: 0.5rem 1rem;
+    // background-color: transparent;
+    // border: 1px solid transparent;
+    // border-radius: 0.3rem;
+    // color: var(--grey);
+    // text-transform: uppercase;
+    // outline: none;
+    // transition: all 0.3s ease;
 
     // @include respond(phone) {
     //   font-size: 0.6rem;
     // }
+    .card__site-btn {
+      text-decoration: none;
+      white-space: nowrap;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
 
-    &:focus {
-      border: 1px solid var(--blue);
-      color: var(--blue);
-    }
+      padding: 0.5rem 1rem;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 0.3rem;
+      color: var(--grey);
+      text-transform: uppercase;
+      outline: none;
+      transition: all 0.3s ease;
 
-    &:hover {
-      background-color: var(--blue);
-      border: 1px solid var(--blue);
-      color: var(--white);
-    }
+      @include respond(phone) {
+        font-size: 0.6rem;
+      }
+      &:focus {
+        border: 1px solid var(--blue);
+        color: var(--blue);
+      }
 
-    &:active {
-      border: 1px solid var(--blue);
-      background-color: var(--blue);
+      &:hover {
+        background-color: var(--blue);
+        border: 1px solid var(--blue);
+        color: var(--white);
+      }
+
+      &:active {
+        border: 1px solid var(--blue);
+        background-color: var(--blue);
+      }
     }
   }
 }
