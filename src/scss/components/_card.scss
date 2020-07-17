@@ -56,13 +56,13 @@
 
     & + .card__site-btns .card__site-btn {
       background-color: var(--white);
-      border: 1px solid var(--blue);
-      color: var(--blue);
+      border: 1px solid var(--color-primary);
+      color: var(--color-primary);
     }
   }
 
   &:focus {
-    border: 2px solid var(--blue);
+    border: 2px solid var(--color-primary);
 
     .card__title {
       color: var(--black);
@@ -193,22 +193,23 @@
 
       @include respond(phone) {
         font-size: 1.2rem;
-        color: var(--blue);
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary);
       }
       &:focus {
-        border: 1px solid var(--blue);
-        color: var(--blue);
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
       }
 
       &:hover {
-        background-color: var(--blue);
-        border: 1px solid var(--blue);
+        background-color: var(--color-primary);
+        border: 1px solid var(--color-primary);
         color: var(--white);
       }
 
       &:active {
-        border: 1px solid var(--blue);
-        background-color: var(--blue);
+        border: 1px solid var(--color-primary);
+        background-color: var(--color-primary);
       }
     }
   }

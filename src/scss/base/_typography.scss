@@ -46,7 +46,7 @@ h3 {
 h4 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: var(--h4);
-  color: var(--blue);
+  color: var(--color-primary);
 
   font-weight: 300;
   @include respond(phone) {
@@ -68,11 +68,11 @@ p {
   font-size: var(--h6);
   @include respond(phone) {
     font-size: 1.2rem;
-    color: var(--blue);
+    color: var(--color-primary);
   }
 }
 span {
-  color: var(--blue);
+  color: var(--color-primary);
 }
 
 a {
@@ -81,7 +81,7 @@ a {
   color: var(--grey);
 
   &:hover {
-    color: var(--blue);
+    color: var(--color-primary);
   }
   @include respond(phone) {
     // font-size: var(--p-small);
