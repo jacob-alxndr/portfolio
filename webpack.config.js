@@ -16,7 +16,7 @@ module.exports = {
       },
       // file loader image folder rule
       {
-        test: /\.(svg|jpg|jpeg|png|gif|pdf|tiff|tif)$/i,
+        test: /\.(svg|jpg|jpeg|png|gif|pdf|tiff|tif|pdf)$/i,
         use: [
           {
             loader: 'file-loader',
