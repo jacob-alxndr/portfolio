@@ -1,0 +1,8 @@
+ul.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  li {
+    text-decoration: none;
+  }
+}

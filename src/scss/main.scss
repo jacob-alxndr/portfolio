@@ -13,15 +13,19 @@
 
 // COMPONENTS
 @import "components/buttons";
+@import "components/list";
 @import "components/card";
 @import "components/cards";
 @import "components/dark-mode";
+@import "components/divider_image";
 @import "components/grid";
 @import "components/word";
 @import "components/intro";
 @import "components/wrapper";
 
 // LAYOUT
+@import "layout/section";
+@import "layout/dark_mode";
 @import "layout/contact";
 @import "layout/footer";
 @import "layout/hero";

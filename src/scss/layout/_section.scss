@@ -1,0 +1,21 @@
+section.section {
+  &.margin {
+    margin-bottom: 16%;
+  }
+  padding: 6rem 0;
+  .heading {
+    &__title {
+      margin-bottom: 0;
+      padding: 2rem 0;
+    }
+    &__img-container {
+      // max-width: 100vw;
+      display: flex;
+      img {
+        height: 40rem;
+        object-fit: cover;
+        max-width: 100%;
+      }
+    }
+  }
+}

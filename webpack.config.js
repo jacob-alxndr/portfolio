@@ -52,6 +52,22 @@ module.exports = {
       filename: '404.html',
       template: './src/404.html',
     }),
+    // Additional HTML pages
+    new HtmlWebpackPlugin({
+      filename: 'projects.html',
+      template: './src/projects.html',
+    }),
+    // Additional HTML pages
+    new HtmlWebpackPlugin({
+      filename: 'good_design_brochure.html',
+      template: './src/Projects/good_design_brochure.html',
+    }),
+    // Additional HTML pages
+    new HtmlWebpackPlugin({
+      filename: 'contact.html',
+      template: './src/contact.html',
+    }),
+
 
     // Additional HTML pages
     // new HtmlWebpackPlugin({

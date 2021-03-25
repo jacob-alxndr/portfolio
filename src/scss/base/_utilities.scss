@@ -1,10 +1,24 @@
 .u-container {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .u-center-text {
-    text-align: center;
+  text-align: center;
+}
+.u-two-column {
+  display: flex;
+  justify-content: space-between;
+
+  &--1 {
+    max-width: 55rem;
+    flex: 1;
+  }
+  &--2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }

@@ -1,0 +1,11 @@
+.dark-mode {
+  color: var(--white);
+  background-color: var(--color-primary);
+  .heading p {
+    color: var(--white);
+  }
+}
+
+.grey-mode {
+  background-color: var(--grey-light);
+}
