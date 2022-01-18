@@ -21,9 +21,9 @@ tl.to(introText, {
     transformOrigin: "top",
     ease: "Power4.easeInOut",
     duration: 0.5,
-  })
-  .from(cards, {
-    opacity: 0,
-    y: 24,
-    duration: 2,
   });
+//   .from(cards, {
+//     opacity: 0,
+//     y: 24,
+//     duration: 2,
+//   });
