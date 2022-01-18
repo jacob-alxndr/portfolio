@@ -8,6 +8,7 @@
   position: relative;
   color: var(--white);
   transition: all 0.3s ease;
+  perspective: 1000px;
 
   @include respond(tab-port) {
     &:not(:last-child) {

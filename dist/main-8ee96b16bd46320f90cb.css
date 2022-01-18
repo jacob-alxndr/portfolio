@@ -186,7 +186,8 @@ ul.list {
   align-items: center;
   position: relative;
   color: var(--white);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  perspective: 1000px; }
   .card__container:hover {
     transform: translateY(-10px); }
 
@@ -408,6 +409,11 @@ section.section {
       padding: var(--spacing-small) 0 var(--spacing-large) 0; } }
   .header .heading__title {
     margin-bottom: 0; }
+  .header .heading__copy a {
+    font-size: var(--h3);
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.3s ease; }
   .header .heading__img-container {
     display: flex; }
     .header .heading__img-container img {
