@@ -14,6 +14,9 @@
     }
     &__label {
       font-family: "IBM Plex Sans", sans-serif;
+      p {
+        font-size: 20px;
+      }
       padding-bottom: 1rem;
     }
     &__copy {
