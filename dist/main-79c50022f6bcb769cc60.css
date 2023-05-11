@@ -412,6 +412,8 @@ section.section {
   .header .heading__label {
     font-family: "IBM Plex Sans", sans-serif;
     padding-bottom: 1rem; }
+    .header .heading__label p {
+      font-size: 20px; }
   .header .heading__copy {
     margin-bottom: 4rem; }
     .header .heading__copy a {
