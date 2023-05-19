@@ -4,10 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   @include respond(phone) {
     padding: var(--spacing-small) 0 var(--spacing-large) 0;
   }
   .heading {
+    // max-width: 20rem;
     &__title {
       margin-bottom: 0;
       // padding: 4rem 0;

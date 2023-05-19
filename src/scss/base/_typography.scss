@@ -47,16 +47,18 @@ h3 {
 h4 {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: var(--h4);
-  color: var(--color-primary);
-
   font-weight: 300;
+  color: var(--grey);
   @include respond(phone) {
     font-size: var(--p-small);
   }
 }
 
 h5 {
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: var(--h5);
+  font-weight: 300;
+  color: var(--grey);
 }
 
 h6 {
